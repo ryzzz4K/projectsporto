@@ -381,7 +381,7 @@ section h2 {
 }
 
 /* Form */
-form {
+.myform {
   max-width: 400px;
   margin: auto;
   padding: 20px;
