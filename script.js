@@ -34,14 +34,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Form submission
     const contactForm = document.querySelector('.contact-form form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Terima kasih! Pesan Anda telah dikirim.');
-            this.reset();
-        });
-    }
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        // Jangan pakai e.preventDefault biar form tetap submit ke Formspree
 
+        // Buat event listener untuk dapat respon sukses
+        fetch(this.action, {
+            method: this.method,
+            body: new FormData(this),
+            headers: { 'Accept': 'application/json' }
+        }).then(response => {
+            if (response.ok) {
+                alert('Terima kasih! Pesan Anda telah dikirim.');
+                contactForm.reset();
+            } else {
+                alert('Oops! Terjadi kesalahan, silakan coba lagi.');
+            }
+        }).catch(() => {
+            alert('Oops! Terjadi kesalahan jaringan.');
+        });
+
+        e.preventDefault(); // Cegah submit default karena sudah pakai fetch
+    });
+                          }
+    
     // Animation on scroll
     const observerOptions = {
         threshold: 0.1,
