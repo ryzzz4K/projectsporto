@@ -384,36 +384,38 @@ section h2 {
 .myform {
   max-width: 400px;
   margin: 40px auto;
-  padding: 20px;
-  background-color: #d3d3d3; /* abu-abu */
-  color: #003366; /* biru gelap */
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 25px 30px;
+  background-color: #d3d3d3; /* abu-abu lembut */
+  color: #003366; /* teks biru gelap */
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }.myForm input,.myForm textarea {
   width: 100%;
-  padding: 12px 15px;
-  margin: 8px 0 16px 0;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  padding: 14px 16px;
+  margin: 10px 0 20px 0;
+  border: 1px solid #aaa;
+  border-radius: 8px;
   font-size: 16px;
-  color: #003366; /* teks input & textarea biru gelap */
+  color: #003366;
   background-color: white;
   box-sizing: border-box;
-  transition: border-color 0.3s;
+  transition: border-color 0.3s ease;
 }.myForm input:focus,.myForm textarea:focus {
   border-color: #1a73e8;
   outline: none;
+  box-shadow: 0 0 5px #1a73e8;
 }.myForm button {
   width: 100%;
   background-color: #1a73e8;
   color: white;
-  padding: 14px;
-  font-size: 16px;
+  padding: 16px;
+  font-size: 18px;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
 }.myForm button:hover {
   background-color: #155ab6;
     }
