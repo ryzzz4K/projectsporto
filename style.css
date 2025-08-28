@@ -383,28 +383,28 @@ section h2 {
 /* Form */
 .myform {
   max-width: 400px;
-  margin: auto;
+  margin: 40px auto;
   padding: 20px;
-  background: #f8f9fa;
+  background-color: #d3d3d3; /* abu-abu */
+  color: #003366; /* biru gelap */
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-input, textarea {
+}.myForm input,.myForm textarea {
   width: 100%;
   padding: 12px 15px;
   margin: 8px 0 16px 0;
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 16px;
+  color: #003366; /* teks input & textarea biru gelap */
+  background-color: white;
   box-sizing: border-box;
   transition: border-color 0.3s;
-}
-input:focus, textarea:focus {
+}.myForm input:focus,.myForm textarea:focus {
   border-color: #1a73e8;
   outline: none;
-}
-button {
+}.myForm button {
   width: 100%;
   background-color: #1a73e8;
   color: white;
@@ -414,17 +414,9 @@ button {
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s;
-}
-button:hover {
+}.myForm button:hover {
   background-color: #155ab6;
     }
-/* Footer */
-footer {
-    background: rgba(0, 0, 0, 0.5);
-    text-align: center;
-    padding: 2rem 0;
-    color: #aaaaaa;
-}
 
 /* Responsive */
 @media (max-width: 768px) {
