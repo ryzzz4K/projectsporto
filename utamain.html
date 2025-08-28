@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>porto ryyz4K</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="stars2"></div>
+    <div class="stars3"></div>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Portfolio</div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-photo">
+                <img src="gambarone.jpg" alt="Profile Photo" id="profile-img">
+            </div>
+            <h1> MALIK ALFARIZ </h1>
+            <h2>Web Developer</h2>
+            <p>Selamat datang di portofolio saya. Saya adalah seorang developer pemula yang memanfaatkan teknologi ai untuk membantu mengerjakan code saya.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="scrollToSection('about')">About Me</button>
+                <button class="btn-secondary" onclick="scrollToSection('contact')">Contact Me</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Siapa Saya?</h3>
+                    <p>saya malik alfariz hoby saya ber olahraga dan memikirkan hal hal unik mengenai alam semesta, saya adalah seorang siswa dari SMAN 1 CILAMAYA, tujuan saya membuat portofolio ini adalah saya ingin menambah ilmu saya dibidang IT dimana ilmu seperti ini belum saya pelajari di sekolah saya.</p>
+                    
+                    <h3>Keahlian Saya</h3>
+                    <div class="skills">
+                        <div class="skill-item">
+                            <span>HTML/CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="gambar12.jpg" alt="Working Photo" id="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="gambar1.jpg" alt="Project 1" id="project1-img">
+                    <div class="portfolio-content">
+                        <h3>Project 1</h3>
+                        <p>pertama saya meminati bidang it adalah ketika saya mendengar komunitas anynomous, dan saya pertama belajar menggunakan termux.</p>
+                        <button class="btn-primary">View Details</button>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="gambar2.jpg"project2-img">
+                    <div class="portfolio-content">
+                        <h3>Project 2</h3>
+                        <p>saya mempelajari github, dan saya juga sudah membuat beberapa repository pada github saya.</p>
+                        <button class="btn-primary">View Details</button>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="gambar3.jpg" alt="Project 3" id="project3-img">
+                    <div class="portfolio-content">
+                        <h3>Project 3</h3>
+                        <p>saya belajar memanfaatkan teknologi ai untuk membantu saya mengerjakan code yang akan saya buat.</p>
+                        <button class="btn-primary">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Mari Berkolaborasi!</h3>
+                    <p>Saya selalu terbuka untuk proyek baru dan kolaborasi menarik. Jangan ragu untuk menghubungi saya!</p>
+                    <div class="contact-item">
+                        <strong>Instagram:</strong> @08_september_08
+                    </div>
+                    <div class="contact-item">
+                        <strong>Phone:</strong> +62 815 1138 3704   
+                    </div>
+                    <div class="contact-item">
+                        <strong>Location:</strong> wanakersa city, Indonesia
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Nama Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 lik4K. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
